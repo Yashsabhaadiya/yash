@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset = "UTF-8">  
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">  
+    <title>jQuery read more / read less example</title>  
+     <!-- jQuery CDN -->  
+    <script src = " https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+     <script src = "assets/jquery.min.js"></script>  
+
+</head>  
+<body>  
+    <section>  
+        <div calss = "container">  
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores cupiditate sed aut odit pariatur dignissimos maiores.  
+            <span class = "dots">.....</span>  
+            <span class = "more" style ="font-size : 18px;">  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa soluta similique minus consectetur unde voluptatibus ipsa! Assumenda corrupti nihil ducimus odio quidem consectetur eveniet, tempore beatae aliquam delectus temporibus quos molestias, accusamus quam explicabo quisquam esse, quibusdam recusandae tenetur necessitatibus nobis debitis hic? Labore, quidem. Nesciunt nulla in possimus minus voluptatibus. Repellendus alias sunt atque asperiores officiis exercitationem corporis unde, ea assumenda nam obcaecati voluptatibus, maiores sint eligendi. Consequatur corporis possimus exercitationem accusamus, est assumenda eum fugit odio, quibusdam porro suscipit ipsa pariatur voluptatum quisquam? Natus at iure veniam autem, porro mollitia hic numquam labore sapiente velit odio exercitationem recusandae?  
+            </span>  
+              
+            <button class = "read">Read More</button>  
+        </div>  
+    </section>  
+    <!-- Script to add read more and read less -->  
+    <script>  
+    $(document).ready(function(){  
+        $(".read").click(function(){  
+            
+            $(this).prev().toggle();  
+            $(this).siblings('.dots').toggle();  
+            if($(this).text()=='Read More'){  
+                $(this).text('Read Less');  
+            }  
+            else{  
+                $(this).text('Read More');  
+            }  
+  
+        });  
+    });  
+    </script>  
+</body>  
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".attach").click(function(){
+                $("div").data("name", "this is a javaTpoint");
+                alert("data atteched successfully");
+            });
+            $(".get").click(function(){
+                alert($("div").data("name"));
+                $("div").text($("div").data("name"));
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div>this is a para</div>
+    <button class="attach">Attach Data</button>
+    <button class="get">Get Data</button>
+
+
+</body>
+
+</html>

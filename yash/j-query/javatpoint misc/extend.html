@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        var obj1 = {
+            english: { price: 150 },
+            hindi: { price: 156 },
+            gujarati: { price: 678, pages: 657 }
+        };
+        var obj2 = {
+            physice: { price: 345 },
+            chemistry: { price: 120 }
+        };
+
+        $(document).ready(function () {
+            $(".para1").append(JSON.stringify(obj1));
+            $(".para2").append(JSON.stringify(obj2));
+            $.extend(obj1, obj2);
+            $(".para3").append(JSON.stringify(obj1));
+        });
+    </script>
+</head>
+
+<body>
+    <p class="para1">first object</p>
+    <p class="para2">second object</p>
+    <p class="para3">merged object</p>
+</body>
+
+</html>

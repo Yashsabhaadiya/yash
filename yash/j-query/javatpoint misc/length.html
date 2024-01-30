@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                alert($("p").length);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>this is a first paragraph</p>
+    <p>this is a second paragraph</p>
+    <p>this is a third paragraph</p>
+
+    <button class="btn">click me!</button>
+</body>
+</html>

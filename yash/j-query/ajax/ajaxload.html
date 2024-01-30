@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="ajaxload.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $.post("data_fetch.asp",
+                    {
+                        name: "Donald Duck",
+                        city: "Duckburg"
+                    },
+                    function (data, status) {
+                        alert("Data: " + data + "\nStatus: " + status);
+                    });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <p>this is a para</p>
+    <button class="btn">button</button>
+</body>
+
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("span").click(function(){
+                if($(this).is(".s1")) {
+                    $(".s1").text("this is a first span").css("background-color", "red");
+                }
+                else if($(this).is(".s2")){
+                    $(".s2").text("this is a second span").css("background-color", "yellow");
+                }
+                else if($(this).is(".s3")){
+                    $(".s3").text("this is a third span").css("background-color", "pink");
+                };
+            });
+        });
+    </script>
+</head>
+<body>
+    <span class="s1">click me!</span><br><br>
+    <span class="s2">click me!</span><br><br>
+    <span class="s3">click me!</span>
+</body>
+</html>

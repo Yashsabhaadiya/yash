@@ -1,0 +1,25 @@
+j-query-selectors :-
+
+
+1.tagname
+2.id
+3.class
+4. css
+
+
+j-query fade-in methods :-
+
+
+1. fadeIn()
+2. fadeout()
+3. fadeToggle()
+4. fadeTo()
+
+
+j-query sliding effects :-
+
+
+1.slideDown()
+2.slideUp()
+2.slideToggle()
+

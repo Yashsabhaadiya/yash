@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <p> Click the following button to see the effect. </p>
+    <button> Click me</button>
+
+    <p id="para"></p>
+
+    <script>
+        $(document).ready(function () {
+
+            student = new Object();
+
+            student.Name = "John";
+            student.Rollno = "19";
+            student.Standard = "Fourth";
+
+            $("button").click(function () {
+                $("#para").text($.param(student)).css("fontSize", "23px");
+            });
+        });  
+    </script>
+</body>
+
+</html>
